@@ -1,1 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+<title>Little Haven</title>
+</head>
+<body><ul>
+    <h2>
+        <li>
+            <a href="Liitle Haven.html">Home</a>
+        </li>
+    </h2>
+        <br>
+        Welcome
+        <br>
+        Product
+        <br>
+        How To Order
+        <br>
+        About Us & Contact Us
+        </ul>
+    </h2>
+    
+    </body>
+</html>
