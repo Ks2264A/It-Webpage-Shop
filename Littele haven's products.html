@@ -1,0 +1,80 @@
+<!--authors: TEY JIA HONG, 261143H 
+Authors: Ling Kai Sheng, 261500Q-->
+
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+<title>Little haven</title>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body> <h1>Products</h1> </body>
+     <h2><a href="Liitle Haven.html">Back to Home</a></h2>
+     <hr />
+    <dl>      
+                        <text align:center;><h2 style="font-family:'Comic Sans MS', cursive;">Pastries</h2></text> 
+                        <h3>Warm, fresh, comforting crispy pastries</h3> 
+                        <h2 style="font-family:'Comic Sans MS', cursive;">Desserts</h2></text>
+                        <h3> Cold, chilling cakes and ice creams</h3>
+                        <text align:center;><h2 style="font-family:'Comic Sans MS', cursive;">Drinks</h2></text>
+                        <h3>Refreshing, thirst-quenching drinks</h3>
+                    </dl>
+                
+              <ol> 
+    <li>Pastries</li>
+                 <ul>
+                    <li>Croissant</li>
+                    <li>Egg tarts</li>
+                    <li>Chocochip Cookies</li>
+                 </ul> 
+     <li>Desserts</li>
+                <ul>
+                    <li>Chocolate Cake</li>
+                    <li>Vanilla Ice Cream</li>
+                    <li>macarons</li>
+                </ul>
+       <li>Drinks</li>
+                <ul>
+                    <li>americano</li>
+                    <li>matcha latte</li>
+                     <li>Brown Sugar boba milk tea</li>
+                </ul>
+                              </ol>
+                <table style="float: center; margin: top-right; 20px auto; width: 80%;">
+                    <style>
+                        table { border-collapse: collapse; }
+                        th, td { border: 2px solid black; padding: 5px; }
+                    </style>
+                    <caption>Menu for Pastries & Prices</caption>
+                    <body>
+                        <div class="screen">
+                                   <tr>
+                        <th scope="col">Pastries</th>
+                        <th scope="col">Price each</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total Price</th>
+                    </tr>
+                    </head>
+                    <body>
+                    <tr>
+                     <td>Croissant</td>
+                      <td>$2.50</td>
+                            <td>
+                                <input type="number" id="quantity" min="1" max="10" value="1"> </td>
+                                <td class="total-cell">
+                                    total price: $<span id="total-price">2.50</span></td>
+                                </tr>
+                    <tr>
+                        <td>Egg tarts</td>
+                        <td>$<span id="total-price">1.50</span></td>
+                        <td> 
+                            <label for="quantity"></label>
+                            <input type="number" name="quantity" min="1" value="1" oninput="updatedtotal()" > </td>
+                            <td><strong>Total price: $<span id="total-price">1.50</span></strong></td>
+                        </tr>
+                    </body>
+    </head>
+</html>
