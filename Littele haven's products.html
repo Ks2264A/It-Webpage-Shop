@@ -14,67 +14,112 @@ initial-scale=1.0">
     <body> <h1>Products</h1> </body>
      <h2><a href="Liitle Haven.html">Back to Home</a></h2>
      <hr />
-    <dl>      
-                        <text align:center;><h2 style="font-family:'Comic Sans MS', cursive;">Pastries</h2></text> 
-                        <h3>Warm, fresh, comforting crispy pastries</h3> 
-                        <h2 style="font-family:'Comic Sans MS', cursive;">Desserts</h2></text>
-                        <h3> Cold, chilling cakes and ice creams</h3>
-                        <text align:center;><h2 style="font-family:'Comic Sans MS', cursive;">Drinks</h2></text>
-                        <h3>Refreshing, thirst-quenching drinks</h3>
-                    </dl>
                 
-              <ol> 
-    <li>Pastries</li>
-                 <ul>
-                    <li>Croissant</li>
-                    <li>Egg tarts</li>
-                    <li>Chocochip Cookies</li>
-                 </ul> 
-     <li>Desserts</li>
-                <ul>
-                    <li>Chocolate Cake</li>
-                    <li>Vanilla Ice Cream</li>
-                    <li>macarons</li>
-                </ul>
-       <li>Drinks</li>
-                <ul>
-                    <li>americano</li>
-                    <li>matcha latte</li>
-                     <li>Brown Sugar boba milk tea</li>
-                </ul>
-                              </ol>
                 <table style="float: center; margin: top-right; 20px auto; width: 80%;">
-                    <style>
-                        table { border-collapse: collapse; }
-                        th, td { border: 2px solid black; padding: 5px; }
-                    </style>
                     <caption>Menu for Pastries & Prices</caption>
-                    <body>
+               <body>
                         <div class="screen">
-                                   <tr>
+               <tr>
                         <th scope="col">Pastries</th>
                         <th scope="col">Price each</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Total Price</th>
-                    </tr>
-                    </head>
-                    <body>
-                    <tr>
+                                         </tr></div>
+                                         <body>
+                     <tr class="odd">
                      <td>Croissant</td>
-                      <td>$2.50</td>
-                            <td>
-                                <input type="number" id="quantity" min="1" max="10" value="1"> </td>
-                                <td class="total-cell">
-                                    total price: $<span id="total-price">2.50</span></td>
+                    <td>$2.50</td>
+                                        </tr>
+                    <tr class="odd">
+                        <td>Egg Tarts</td>
+                        <td>$1.50</td>
+                  </tr>
+                  <tr class="odd">
+                          <td>Chocolate Cookie</td>
+                         <td>$1.00</td>
+                  </tr> 
+                  <tr class="odd">
+                    <td>Blueberry Muffin</td>
+                    <td>$2.00</td>
+                  </tr>
+                  <tr class="odd">
+                    <td>Baked Scone</td>
+                    <td>$1.50</td>
+                  </tr> 
+                     </table>
+                  
+                        <hr />
+                  <table style="float: center; margin: top-right; 20px auto; width: 80%;">
+                    <caption>Menu for Desserts & Prices</caption>
+
+                    <body>
+                        <div class="screen">
+                            <tr>
+                                <th scope="col">Desserts</th>
+                                <th scope="col">Price each</th> 
+                            </tr></div>
+                            <body>
+                                <tr class="even">
+                                    <td>Chocolate Lava Cake</td>
+                                    <td>$3.60</td>
                                 </tr>
-                    <tr>
-                        <td>Egg tarts</td>
-                        <td>$<span id="total-price">1.50</span></td>
-                        <td> 
-                            <label for="quantity"></label>
-                            <input type="number" name="quantity" min="1" value="1" oninput="updatedtotal()" > </td>
-                            <td><strong>Total price: $<span id="total-price">1.50</span></strong></td>
-                        </tr>
+                                <tr class="even">
+                                    <td>Oreo Macaron</td>
+                                    <td>$2.20</td>
+                                </tr>
+                                <tr class="even">
+                                    <td>Strawberry Souffle</td>
+                                    <td>$4.00</td>
+                                </tr>
+                                <tr class="even">
+                                    <td>Matcha Pancakes</td>
+                                    <td>$4.50</td>
+                                </tr>
+                                <tr class="even">
+                                    <td>Apple Crumbs Cream Pie</td>
+                                    <td>$4.60</td>
+                                </tr>
+                                  </table>
+
+                  <hr />
+
+                  <table style="float: center; margin: top-right; 20px auto; width: 80%;">
+                    <caption>Menu for Drinks & Prices</caption>
+                    <body>
+                        <div class="screen">
+                            <tr>
+                                <th scope="col">Drinks</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Price each</th> 
+                            </tr></div>
+                            <body>
+                                <tr>
+                                    <td>Hot Chocolate</td>
+                                    <td>Short(8 oz)</td>
+                                    <td>$4.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Matcha Latte</td>
+                                    <td>Tall(12 oz)</td>
+                                    <td>$6.70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oreo ice blended</td>
+                                        <td>Grande(16 oz)</td>
+                                        <td>$8.60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Strawberry Milkshake</td>
+                                        <td>Venti(20 oz)</td>
+                                        <td>$9.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Iced Americano</td>
+                                        <td>Tall(12 oz)</td>
+                                        <td>$5.30</td>
+                                    </tr>
+                            </body>
+
                     </body>
+                    </body>
+                    
     </head>
 </html>
