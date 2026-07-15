@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Simple Grid Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* 1. Setup the main layout area */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Splits the page into 2 equal columns (Left and Right) */
+            gap: 40px;                      /* Puts a 40px gap between all items */
+            max-width: 900px;
+            margin: 0 auto;                 /* Centers the whole layout on the screen */
+            text-align: left;               /* Makes reading text easier */
+        }
+
+        /* 2. Simple styles for our image/logo placeholder boxes */
+        .box-placeholder {
+            border: 2px solid blue;
+            background-color: #f9f9f9;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* 3. Make the mission statement stretch across BOTH columns at the bottom */
+        .full-width {
+            grid-column: span 2; 
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; text-decoration: underline;">About Us</h1>
+
+    <div class="grid-container">
+        
+        <div class="box-placeholder">
+            <h3>Website Logo</h3>
+            <p>(Little Haven Logo)</p>
+        </div>
+        
+        <div style="text-align:center;justify-content: center;">
+            <h2 style="font-family: 'Comic Sans MS', cursive; margin: 0;">The Little Haven</h2>
+            <p><i><mark>Bake • Chill • Enjoy</mark></i></p>
+        </div>
+
+        <div>
+            <h3>Have you ever....</h3>
+            <p>felt hungry after dinner and felt like eating a dessert?</p>
+            <p>At Little Haven, we want everyone to feel the savory of our premium products, and ensure people will run on sugar and vibes to keep themselves energized!</p>
+        </div>
+        
+        <div class="box-placeholder">
+            <h3>A dessert / menu item pic</h3>
+        </div>
+
+        <div class="full-width">
+            <strong>Our mission:</strong> To deliver quality and premium products for our consumers to enjoy & savour their every bite.
+        </div>
+
+    </div>
+
+</body>
+</html>
