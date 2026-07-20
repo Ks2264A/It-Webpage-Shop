@@ -1,36 +1,26 @@
-body{background-color:burlywood;}
+body{font-family: Arial, sans-serif; max-width: 1200px; margin: 30px auto;}
+            label{display:inline-block; margin-top:12px;font-weight:bold;}
+            input,select,textarea{margin-top:4px;}
+body{background-color:lightblue;}
 h1{color:navy; margin-left:20px;}
-h2{color:rgb(194, 45, 45); margin-left:20px;}
-h3{color:rgb(0, 0, 0); margin-left:20px;}
 p{color:black; margin-left:20px; margin-right:20px;}
-body {
-            font-family: sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-
-        /* 1. Setup the main layout area */
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Splits the page into 2 equal columns (Left and Right) */
-            gap: 40px;                      /* Puts a 40px gap between all items */
-            max-width: 900px;
-            margin: 0 auto;                 /* Centers the whole layout on the screen */
-            text-align: left;               /* Makes reading text easier */
-        }
-
-        /* 2. Simple styles for our image/logo placeholder boxes */
-        .box-placeholder {
-            border: 2px solid blue;
-            background-color: #f9f9f9;
-            padding: 40px;
-            text-align: center;
-        }
-
-        /* 3. Make the mission statement stretch across BOTH columns at the bottom */
-        .full-width {
-            grid-column: span 2; 
-            text-align: center;
-            margin-top: 20px;
-            font-size: 1.2rem;
-        }
+nav ul {
+list-style-type: none;
+background-color: #1B2A4A;
+padding: 10px;
+}
+nav li { display: inline-block; }
+nav a {
+color: white;
+padding: 8px 16px;
+text-decoration: none;
+}
+img {
+  float: left;
+  margin-right: 15px;
+  width: 1200px;
+  height: 1200px;  
+}
+p {
+  font-size: 30px;
+}
