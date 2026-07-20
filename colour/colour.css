@@ -1,17 +1,17 @@
 body{font-family: Arial, sans-serif; max-width: 1200px; margin: 30px auto;}
             label{display:inline-block; margin-top:12px;font-weight:bold;}
             input,select,textarea{margin-top:4px;}
-body{background-color:lightblue;}
+body{background-color:burlywood;}
 h1{color:navy; margin-left:20px;}
 p{color:black; margin-left:20px; margin-right:20px;}
 nav ul {
 list-style-type: none;
-background-color: #1B2A4A;
+background-color: rgb(206, 169, 144);
 padding: 10px;
 }
 nav li { display: inline-block; }
 nav a {
-color: white;
+color: #2d190d;
 padding: 8px 16px;
 text-decoration: none;
 }
@@ -24,3 +24,6 @@ img {
 p {
   font-size: 30px;
 }
+.logo{ 
+height:200px; 
+width: auto;  }
