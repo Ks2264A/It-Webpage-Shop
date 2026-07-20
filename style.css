@@ -1,24 +1,26 @@
 body{background-color: burlywood}
-  h1{ color:rgb(120, 83, 46); text-align:center;} 
+  h1{ color:rgb(120, 83, 46);
+     text-align:center;}
+     
+     h2{color: #49325b;}
+    
   
-  h2{color: #49325b;}
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
-.card{ width:80%;
-   margin-left: auto; 
-   margin-right: auto;}
-
-font{
-  background-color: #f2f2f2;
-  padding: 10px;
-  width: 350px; }
-
-  h1{font size: 100px;}
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  
+  .card{ width:80%;
+    margin-left: auto; 
+    margin-right: auto;}
+    
+    font{
+      background-color: #f2f2f2;
+      padding: 10px;
+      width: 350px; }
+      
+      h1{font-size: 65px;}
 
    img{ width:100%;
      max-width: 280px; 
@@ -31,7 +33,7 @@ font{
                         max-width: 10; 
                         margin-left: auto;
                          margin-right: auto; 
-                         passing 20px;}
+                         passing: 20px;}
 
                         .card{padding: 4px; 
                           / *Breathing room*
@@ -49,15 +51,18 @@ font{
                               padding: 12px;
                               font-size: 30px;
                         }
-                        nav ul
+                      nav ul
                         {list-style-type: none;
-                         background-color: #2d190d;
-                        padding: 20px;}
+                         background-color: #000000;
+                        padding: 0px;
+                      margin: 0;}
+
                         nav li
                         {display: inline-block;}
                         nav a {
                           color: rgb(206, 169, 144);
-                          padding: 8px 16px;
+                          padding: 8px 12px;
+                          font-size: 50px;
                           text-decoration: none;
                         }
 
@@ -69,7 +74,7 @@ font{
                         
                         .navbar{display: flex; 
                         align-items: center;
-                      padding: 10px;}
+                      padding: 5px;}
 
                       .logo{ 
                         height:200px; 
@@ -89,5 +94,19 @@ font{
                   }
                   
                   .card{ cursor: pointer;}
-
+                  
+                  ul{display: flex;
+                  flex-wrap: nowrap;
+                align-items: center;
+              height: auto;
+            list-style-type: none;
+          padding: 0;
+        margin:0;}
+        ul li a{
+          padding: 10px 15px;
+          display: inline-block;
+        }
+                     p{color:#49325b; 
+      text-align: center;
+  font-size: 30px;}
           
