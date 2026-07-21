@@ -1,8 +1,9 @@
-body{
+.body{
     font-family: Arial, Helvetica, sans-serif;
-    background:bisque
-    text-align:center;
+    background:bisque;
+    text-align: center;
 }
+
 h1{
     margin-top: 30px;
 }
@@ -22,7 +23,7 @@ h1{
 
     .cards{
         min-width: 280px;
-        background: white;
+        background: rgb(99, 161, 204);
         border-radius: 20px;
         padding:20px;
         box-shadow: 0 0 10px rgba (0,0,0,0.2);
@@ -30,5 +31,20 @@ h1{
     }
 
     .cards h2{
-        colour:gold
+        color:gold
     }
+
+     nav ul
+                        {list-style-type: none;
+                         background-color: #000000;
+                        padding: 0px;
+                      margin: 0;}
+
+                        nav li
+                        {display: inline-block;}
+                        nav a {
+                          color: rgb(206, 169, 144);
+                          padding: 8px 12px;
+                          font-size: 50px;
+                          text-decoration: none;
+                        }
