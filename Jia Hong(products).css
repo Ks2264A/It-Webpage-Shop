@@ -1,6 +1,7 @@
 body{background-color: burlywood}
   h1{ color:rgb(120, 83, 46);
-     text-align:center;}
+     text-align:center;
+     font-size: 65px;}
      
      h2{color: #49325b;}
     
@@ -10,17 +11,12 @@ body{background-color: burlywood}
     flex-direction: row;
     gap: 16px;
   }
-  
-  .card{ width:80%;
-    margin-left: auto; 
-    margin-right: auto;}
     
     font{
       background-color: #f2f2f2;
       padding: 10px;
       width: 350px; }
       
-      h1{font-size: 65px;}
 
    img{ width:100%;
      max-width: 280px; 
@@ -33,14 +29,8 @@ body{background-color: burlywood}
                         max-width: 10; 
                         margin-left: auto;
                          margin-right: auto; 
-                         passing: 20px;}
+                         padding: 20px;}
 
-                        .card{padding: 4px; 
-                          / *Breathing room*
-                          /margin:10px;
-                          / *gap to others*
-                          / border: 1px solid #DDD;
-                        }
 
                         .card{background: wheat;
                            padding: 20px;
@@ -55,7 +45,7 @@ body{background-color: burlywood}
                         {list-style-type: none;
                          background-color: #000000;
                         padding: 0px;
-                      margin: 0;}
+                      margin: 0px;}
 
                         nav li
                         {display: inline-block;}
@@ -68,31 +58,26 @@ body{background-color: burlywood}
 
                         nav a:hover
                         {background: #5a5246;}
-                        .card:hover
-                        {box-shadow: 6px 6px 14px #af4d4d;
-                        transition: 0.3s;}
+
                         
                         .navbar{display: flex; 
-                        align-items: center;
-                      padding: 5px;}
-
-                      .logo{ 
-                        height:200px; 
-                        width: auto;
-                      }
-
-                      .nav-link.actve{
-                        color:#ff5722;
-                        font-weight: bold;
-                        border-bottom: 2px solid #ff5722;
-                      }
-
-                  .card-link{
-                    text-decoration: none; 
-                    color: inherit;
-                    display: block;
-                  }
-                  
+                          align-items: center;
+                          padding: 20px;}
+                          
+                          .logo{ 
+                            height:200px; 
+                            width: auto;
+                          }
+                          
+                          .nav-link.actve{
+                            color:#ff5722;
+                            font-weight: bold;
+                            border-bottom: 2px solid #ff5722;
+                          }
+                          .card:hover
+                          {box-shadow: 6px 6px 14px #af4d4d;
+                          transition: 0.3s;}
+                          
                   .card{ cursor: pointer;}
                   
                   ul{display: flex;
@@ -109,4 +94,9 @@ body{background-color: burlywood}
                      p{color:#49325b; 
       text-align: center;
   font-size: 30px;}
+
+  .nav-container{ display: flex;
+  justify-content: space-between;
+align-items: center;
+width: 100%;}
           
