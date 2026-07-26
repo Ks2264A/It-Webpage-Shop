@@ -48,3 +48,49 @@ h1{
                           font-size: 50px;
                           text-decoration: none;
                         }
+
+
+.comment-box {
+  max-width: 450px;
+  margin: 15px auto 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+/* Labels and Inputs */
+.comment-box .field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.comment-box label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.comment-box input,
+.comment-box textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1 rem;
+  font-family: inherit;
+}
+
+/* Submit Button */
+.comment-box .submit-btn {
+  background-color: #317db3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
