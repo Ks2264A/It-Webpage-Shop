@@ -1,100 +1,116 @@
-body{background-color: burlywood}
-  h1{ color:rgb(120, 83, 46);
+/*Author: TEY JIA HONG, admin number: (261143H)
+Author: SEAH XIN EN ISABELLE, (261392R) */
+body{background-color: bisque}
+  h1{ color: #5d473b;
      text-align:center;
-     font-size: 65px;}
-     
-     h2{color: #49325b;}
-
-     p{color:#49325b; 
-      text-align: center;
+     font-size: 45px;}
+     h2{color: darkcyan}
+      p{color: #5d473b ;
+     text-align: center;
       font-size: 30px;}
       
     font{
-      background-color: #f2f2f2;
-      padding: 10px;
-      width: 350px; }
+     background-color: #f2f2f2;
+     padding: 10px;
+    width: 200px; }
       
       
    img{ width:100%;
-    max-width: 280px; 
+    max-width: 210px; 
      height: auto; 
      display: block;}
 
   body{font-size: 20px;}
-  
-                        main{
-                          max-width: 10; 
-                          margin-left: auto;
-                          margin-right: auto; 
-                         padding: 20px;}
                          
-                         nav ul
-                              {list-style-type: none;
-                                background-color: #000000;
-                          padding: 0px;
-                          margin: 0px;}
+           nav ul
+         {list-style-type: none;
+         background-color: black;
+         padding: 0px;
+           margin: 0px;}
 
-                          nav li
-                        {display: inline-block;}
-                        nav a {
-                          color: rgb(206, 169, 144);
-                          padding: 8px 12px;
-                          font-size: 50px;
-                          text-decoration: none; }
-
-                        nav a:hover
-                        {background: #5a5246;}
-
-                        
-                        .navbar{display: flex; 
-                          align-items: center;
-                          padding: 20px;}
+           nav li
+            {display: inline-block;}
                           
-                          .logo{ 
-                            height:200px; 
-                            width: auto;
-                          }
-                          
-                          .nav-link.actve{
-                            color:#ff5722;
-                            font-weight: bold;
-                            border-bottom: 2px solid #ff5722; }
+           .nav a {
+           color: rgb(255, 255, 255);
+           padding: 8px 12px;
+           font-size: 20px;
+           text-decoration: none; }
                             
-                            .nav-container{ display: flex;
-                            justify-content: space-between;
-                          align-items: center;
-                          width: 100%;}
+             nav a:hover
+             {color: #3498db;
+            text-decoration: underline;}
+                            
+              ul{display: flex;
+             flex-wrap: nowrap;
+             align-items: center;
+            height: auto;
+            list-style-type: none;
+             padding: 0;
+             margin: 0;}
+
+               ul li a
+               {padding: 10px 15px;
+               display: inline-block;
+              color: burlywood;}
+
+            .navbar{display: flex; 
+            align-items: center;
+            padding: 20px;
+             color: bisque;}
+             
+             .nav-link.actve{
+               color:#ff5722;
+               font-weight: bold;
+               border-bottom: 2px solid #ff5722; }
+               
+               .nav-container
+               { position: absolute;
+                top: 0;
+                left: 0;
+              width: 100%;
+              height: 60px;}
+              .main-content{ padding-top: 60px;}
+
+              .nav-container ul{
+            list-style-type: none;
+             padding: 0px;
+             margin: 0px;
+            display: flex;
+            flex-direction: row;}
+            .nav-container ul li a{
+              display: block;
+              padding: 15px 20px;
+              color: white;
+              text-decoration: none;}
+              .nav-container ul li a:hover{
+                background-color: #3498db;}
+
+
+                /* hover effect to make it more interactive*/
+                .logo{ 
+                 height:200px; 
+                 width: auto}
                                                         .card:hover
                                                          {box-shadow: 6px 6px 14px #af4d4d;
                                                         transition: 0.3s;}
                                                             
-                                                        .card{ cursor: pointer;}
+                                                        
                                                             
                                                         .card-container {
                                                         display: flex;
                                                         flex-direction: row;
                                                         gap: 16px;}
                               
-                                                       .card{background: wheat;
-                                                        padding: 20px;
-                                                          border-radius:6px;
-                                                           box-shadow:  4px 4px 10px #7b4a2b;
-                                                            max-width: 270px;
-                                                            flex:1;
-                                                            padding: 12px;
-                                                            font-size: 30px;}
+                                                      .card{background: wheat;
+                                                       padding: 20px;
+                                                       border-radius:6px;
+                                                       box-shadow:  4px 4px 10px #7b4a2b;
+                                                        max-width: 270px;
+                                                       flex:1;
+                                                      padding: 12px;
+                                                       font-size: 30px;}
 
-                            ul{display: flex;
-                              flex-wrap: nowrap;
-                              align-items: center;
-                                height: auto;
-                              list-style-type: none;
-                              padding: 0;
-                              margin: 0;}
-                          
-                              ul li a{
-                                        padding: 10px 15px;
-                                         display: inline-block;}
 
 
           
