@@ -1,7 +1,8 @@
+/*Author: Ling Kai Sheng (261500Q)*/
 body{font-family: Arial, sans-serif; max-width: 1200px; margin: 30px auto;}
             label{display:inline-block; margin-top:12px;font-weight:bold;}
              input,select,textarea{margin-top:4px;}
-body{background-color:burlywood;}
+body{background-color:bisque;}
 h1{color:#2d190d; margin-left:20px;}
 p{color:black; margin-left:20px; margin-right:20px;}
 nav ul {
@@ -17,7 +18,7 @@ text-decoration: none;
 }
 body {
   margin: 0;
-  background-color: burlywood; /* The background color you fade into */
+  background-color: bisque; /* The background color you fade into */
 }
 
 .hero-container {

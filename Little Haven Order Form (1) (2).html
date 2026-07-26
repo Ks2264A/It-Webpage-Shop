@@ -15,9 +15,9 @@ initial-scale=1.0">
         label  { display: inline-block; margin-top: 12px; font-weight: bold; }
         input, select, textarea { margin-top: 4px; }
     </style>
- 
-</head>
 
+</head>
+<body>
     <div class="nav-container">
         <nav class="navbar">
  <nav>
@@ -52,6 +52,7 @@ initial-scale=1.0">
 
     <body>
         <h1>Order Form: 🍰 Little Haven 🍰</h1>
+     <form action="thankyou.html" method="get">
         <style>
             * {
                 box-sizing: border-box;
@@ -70,8 +71,9 @@ initial-scale=1.0">
                 display: table;
             }
 </style>
-</body>
- <br />
+</head>
+<body>
+ <br>
 <hr>
 <h2>Pastries:</h2>
     <div class="row">
@@ -79,7 +81,7 @@ initial-scale=1.0">
             <img src="./images/Homemade-Croissants-1.jpg" alt="Croissants" width="107">
             <p style="margin-top: 3px;">Croissants</p>
         <p style="margin-top: 3px;">$2.50 each </br>
-            <label><input type="number" name="qty" min="1" max="10" value="0" id="qty1">
+            <label><input type="number" name="qty" min="0" max="10" value="0" id="qty1">
                 <br>Quantity</label>  
             </div>
             
@@ -87,28 +89,28 @@ initial-scale=1.0">
                 <img src="./images/portuguese-egg-custard-tarts.webp" alt="Egg Tarts" width="160">
                 <p style="margin-top: 3px;">Egg Tarts</p>
                 <p style="margin-top: 3px;">$1.50 each</br>
-                    <label><input type="number" name="qty" min="1" max="10" value="0" id="qty2">
+                    <label><input type="number" name="qty" min="0" max="10" value="0" id="qty2">
                         <br>Quantity</label>
                     </div>
                     <div class="column">
                         <img src="./images/images.jpg" alt="Chocochip Cookies" width="107">
                         <p style="margin-top: 3px;">Chocochip Cookies</p>
                         <p style="margin-top: 3px;">$1.00 each</br>
-                            <label><input type="number" name="qty" min="1" max="10" value="0" id="qty3">
+                            <label><input type="number" name="qty" min="0" max="10" value="0" id="qty3">
                                 <br>Quantity</label>
                             </div>
                             <div class="column">
                                 <img src="./images/Healthy-Blueberry-Muffins-Square-2026.png" alt="Blueberry Muffin" width="160">
                                 <p style="margin-top: 3px;">Blueberry Muffin</p>
                                 <p style="margin-top: 3px;">$2.00 each</br>
-                                    <label><input type="number" name="qty" min="1" max="10" value="0" id="qty4">
+                                    <label><input type="number" name="qty" min="0" max="10" value="0" id="qty4">
                                         <br>Quantity</label>
                                     </div>
                                     <div class="column">
                                         <img src="./images/White-and-Brown-Photo-Yummy-Bread-Facebook-Post.jpg" alt="Baked Scone" width="189">
                                         <p style="margin-top: 3px;">Baked Scone</p>
                                         <p style="margin-top: 3px;">$1.50 each</br>
-                                            <label><input type="number" name="qty" min="1" max="10" value="0" id="qty5">
+                                            <label><input type="number" name="qty" min="0" max="10" value="0" id="qty5">
                                                 <br>Quantity</label>
                                             </div>
                                         </div>    
@@ -136,27 +138,28 @@ initial-scale=1.0">
         }
 </style>
 </head>
+
 <body>
     <div class="row">
         <div class="column">
             <img src="./images/Chocolate-Lava-Cakes-11.jpg" alt="Chocolate Lava Cake" width="150">
             <p style="margin-top: 3px;">Chocolate Lava Cake</p>
             <p style="margin-top: 3px;">$3.60 </br>
-                <label><input type="number" name="qty" min="1" max="10" value="0" id="qty1">
+                <label><input type="number" name="qty" min="0" max="10" value="0" id="qty1">
                     <br>Quantity</label>  
                 </div>
                 <div class="column">
                     <img src="./images/oreo_macarons_thumb1.webp" alt=" Oreo Macarons" width="150">
                     <p style="margin-top: 3px;">Oreo Macarons</p>
                     <p style="margin-top: 3px;">$2.20</br>
-                        <label><input type="number" name="qty" min="1" max="10" value="0" id="qty2">
+                        <label><input type="number" name="qty" min="0" max="10" value="0" id="qty2">
                             <br>Quantity</label>
     </div>
     <div class="column">
         <img src="./images/Strawberry-Souffle-Featured-1.jpg" alt="Strawberry Souffle" width="150">
         <p style="margin-top: 3px;">Strawberry Souffle</p>
         <p style="margin-top: 3px;">$4.00</br>
-            <label><input type="number" name="qty" min="1" max="10" value="0" id="qty3">
+            <label><input type="number" name="qty" min="0" max="10" value="0" id="qty3">
                 <br>Quantity</label>
             </div>
             <div class="column">
@@ -170,7 +173,7 @@ initial-scale=1.0">
                         <img src="./images/Apple-Crumble-Pie-24.jpg" alt="Apple Crumbs Cream Pie" width="140">
                         <p style="margin-top: 3px;">Apple Crumbs Cream Pie</p>
                         <p style="margin-top: 3px;">$2.50</br>
-                            <label><input type="number" name="qty" min="1" max="10" value="0" id="qty5">
+                            <label><input type="number" name="qty" min="0" max="10" value="0" id="qty5">
                                 <br>Quantity</label>
                             </div>
                         </div>
@@ -220,7 +223,7 @@ initial-scale=1.0">
                             <option value="boba">Pumpkin Spice Latte</option>
                         </select>
                         <br><br>
-                        <label><input type="number" name="qty" min="1" max="10" value="0" id="qty3">
+                        <label><input type="number" name="qty" min="0" max="10" value="0" id="qty3">
                             <br>Quantity</label>
                         </select>
                         <legend><h3>Cup size</legend></h3>
@@ -237,13 +240,13 @@ initial-scale=1.0">
                         <br>
                         <label for="custname">Your Name:</label>
                         <input type="name" name="name" id="name"
-                        placeholder="Tom"
-                        required>
+                         placeholder="Tom"
+                         required>
                         <br>
-                        <label for="Email">Your Email:</label>
+                        <label for="email">Your Email:</label>
                         <input type="email" name="email" id="email"
-                        placeholder="6767@gmail.com"
-                        required>
+                         placeholder="6767@gmail.com"
+                         required>
                         <br>
                         <label for="custname">Contact Number:</label>
                         <input type="text" name="custname">
@@ -256,4 +259,3 @@ initial-scale=1.0">
   <br><br><input type="submit" value="Place Order">
     <input type="reset" value="Clear Form">
     <input type="date" value="date">
-</main>
