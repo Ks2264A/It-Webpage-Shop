@@ -1,6 +1,7 @@
 /*Author: TEY JIA HONG, admin number: (261143H)
 Author: SEAH XIN EN ISABELLE, (261392R) */
-body{background-color: bisque}
+body{background-color: bisque;
+font-size: 20px;}
   h1{ color: #5d473b;
      text-align:center;
      font-size: 45px;}
@@ -16,11 +17,12 @@ body{background-color: bisque}
       
       
    img{ width:100%;
-    max-width: 210px; 
+    max-width: 100%; 
      height: auto; 
      display: block;}
+     .column{ width: 50%;}
+     *{box-sizing: border-box;}
 
-  body{font-size: 20px;}
                          
            nav ul
          {list-style-type: none;
@@ -78,6 +80,7 @@ body{background-color: bisque}
              margin: 0px;
             display: flex;
             flex-direction: row;}
+
             .nav-container ul li a{
               display: block;
               padding: 15px 20px;
