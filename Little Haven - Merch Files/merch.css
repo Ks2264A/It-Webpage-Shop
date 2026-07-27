@@ -1,0 +1,67 @@
+body{font-family: Arial, sans-serif; max-width: 1600px; margin: 30px auto;}
+            label{display:inline-block; margin-top:12px;font-weight:bold;}
+             input,select,textarea{margin-top:4px;}
+body{background-color:bisque;}
+h1{color:#2d190d; margin-left:20px;}
+p{color:black; margin-left:20px; margin-right:20px;}
+nav ul {
+list-style-type: none;
+background-color: #2d190d;
+padding: 10px;
+}
+nav li { display: inline-block; }
+nav a {
+color: rgb(206, 169, 144);
+padding: 8px 16px;
+text-decoration: none;
+}
+body {
+  margin: 0;
+  background-color: bisque; /* The background color you fade into */
+}
+p {
+  font-size: 30px;
+}
+.logo{ 
+height:200px; 
+width: auto;  }
+/* 1. The visible window frame */
+        .scroll-container {
+            overflow: hidden;
+            width: 100%;
+            background-color: bisque;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        /* 2. The long track moving left */
+        .scroll-track {
+            display: flex;
+            width: max-content;
+            animation: scrollLoop 5s linear infinite;
+        }
+
+        /* Pause scrolling when user hovers over an image */
+        .scroll-container:hover .scroll-track {
+            animation-play-state: paused;
+        }
+
+        /* 3. Styling the individual images */
+        .scroll-track img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            margin: 0 10px;
+            border-radius: 8px;
+        }
+
+        /* 4. The animation math logic */
+        @keyframes scrollLoop {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                /* Moves exactly half the width of the double-set track */
+                transform: translateX(-50%);
+            }
+        }
