@@ -1,0 +1,183 @@
+/*Author: Elias Tan
+Admin no. 261368P*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: burlywood;
+    font-family: sans-serif;
+    margin: 16px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2 {
+    color: rgb(194, 45, 45);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #2d190d;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: rgb(206, 169, 144);
+    padding: 6px 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #5a5246;
+}
+
+.nav-logo {
+    height: 90px;
+    width: auto;
+    display: block;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 14px #af4d4d;
+    transition: 0.3s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.box-placeholder {
+    border: 2px solid blue;
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.full-width {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.hero-title {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 3.1rem);
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 2.3vw, 2.2rem);
+}
+
+.page-intro {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.faq-container details {
+    width: min(100%, 420px);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+
+    nav.top-nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3, p {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    nav a {
+        padding: 5px 8px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
