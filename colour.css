@@ -2,25 +2,57 @@ body{font-family: Arial, sans-serif; max-width: 1200px; margin: 30px auto;}
             label{display:inline-block; margin-top:12px;font-weight:bold;}
             input,select,textarea{margin-top:4px;}
 body{background-color:burlywood;}
-h1{color:navy; margin-left:20px;}
+h1{color:#2d190d; margin-left:20px;}
 p{color:black; margin-left:20px; margin-right:20px;}
 nav ul {
 list-style-type: none;
-background-color: #1B2A4A;
+background-color: #2d190d;
 padding: 10px;
 }
 nav li { display: inline-block; }
 nav a {
-color: white;
+color: rgb(206, 169, 144);
 padding: 8px 16px;
 text-decoration: none;
 }
-img {
-  float: left;
-  margin-right: 15px;
-  width: 1200px;
-  height: 1200px;  
+body {
+  margin: 0;
+  background-color: burlywood; /* The background color you fade into */
+}
+.hero-container {
+  position: relative;
+  height: 100vh; /* Keeps the container fixed to viewport height */
+}
+
+.fade-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed; /* Keeps image pinned while content scrolls over it */
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  /* Scroll-driven animation properties */
+  animation: fade-out linear both;
+  animation-timeline: scroll(); /* Tracks the main page scroll layout */
+  animation-range: exit 20% exit 50%; /* Dictates when the fade starts and stops */
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+.content {
+  margin-top: 100vh; /* Pushes content below the viewport fold */
+  padding: 40px;
+  color: white;
+  min-height: 200vh; /* Ensures the page is long enough to scroll */
 }
 p {
   font-size: 30px;
-}
+}.logo{ 
+height:200px; 
+width: auto;  }
