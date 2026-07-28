@@ -23,6 +23,17 @@ font-size: 20px;}
      .column{ width: 50%;}
      *{box-sizing: border-box;}
 
+     .site-header{
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffffff; }
+      
+      .site-logo{
+        height: 40px;
+        width: auto;
+        display: block;
+      }
                          
            nav ul
          {list-style-type: none;
