@@ -16,47 +16,117 @@ color: rgb(206, 169, 144);
 padding: 8px 16px;
 text-decoration: none;
 }
-body {
-  margin: 0;
-  background-color: bisque; /* The background color you fade into */
-}
-
-.hero-container {
-  position: relative;
-  height: 100vh; /* Keeps the container fixed to viewport height */
-}
-
-.fade-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: fixed; /* Keeps image pinned while content scrolls over it */
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  /* Scroll-driven animation properties */
-  animation: fade-out linear both;
-  animation-timeline: scroll(); /* Tracks the main page scroll layout */
-  animation-range: exit 20% exit 50%; /* Dictates when the fade starts and stops */
-}
-
-@keyframes fade-out {
-  to {
-    opacity: 0;
-  }
-}
-
-.content {
-  margin-top: 100vh; /* Pushes content below the viewport fold */
-  padding: 40px;
-  color: white;
-  min-height: 200vh; /* Ensures the page is long enough to scroll */
-}
-
 p {
   font-size: 30px;
 }
-.logo{ 
-height:200px; 
-width: auto;  }
+    /* 1. The container dictates the positioning area */
+        .image-container {
+            position: relative;
+            display: inline-block; /* Keeps container tight around the image */
+        }
+
+        /* Ensure the image behaves nicely */
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* 2. Position the text exactly where you want it over the image */
+        .overlay-text {
+            position: absolute;
+            
+            /* Center the text perfectly */
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            /* Styling options for legibility */
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+   /* Container controls the horizontal alignment */
+        .card-container {
+            display: flex;
+            align-items: stretch; 
+            width: 80%;          /* Uses the entire screen width */
+            margin-left: 40px 0;
+            gap: 100px;             /* Space between cards */
+        }
+
+        /* Shared base styles */
+        .card-link {
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: #333;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Rectangle Width */
+        .rect-box {
+            width: 700px;
+        }
+
+        /* Square Width */
+        .square-box {
+            width: 450px;
+        }
+        .long-rect-box {
+            width: 800px;
+        }
+
+        .card-image {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .rect-box .card-image {
+            height: 280px;
+        }
+
+        .square-box .card-image {
+            height: 280px;
+        }
+        .long-rect-box .card-image {
+            height: 500px;
+        }
+
+        .card-content {
+            padding: 40px;
+        }
+
+        .card-title {
+            margin: 0 0 14px 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .square-box .card-title {
+            font-size: 1.4rem;
+        }
