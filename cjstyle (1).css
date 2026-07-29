@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 <!--Author:Chen Jie, Admin number261531E-->
+=======
+/* Author:Chen Jie (261531E) */
+
+>>>>>>> a51032e (changes)
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:bisque;
+    background:rgb(229, 200, 160);
     text-align: center;
 }
 
@@ -64,6 +69,9 @@ h1{
   text-align: left;
 }
 
+.animated-box{
+ 
+}
 /* Labels and Inputs */
 .comment-box .field {
   display: flex;
