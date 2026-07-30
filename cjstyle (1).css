@@ -1,105 +1,85 @@
-<<<<<<< HEAD
-<!--Author:Chen Jie, Admin number261531E-->
-=======
 /* Author:Chen Jie (261531E) */
 
->>>>>>> a51032e (changes)
+
+nav ul {
+list-style-type: none;
+background-color: #000000;
+padding: 0px;
+margin: 0;}
+nav li{
+display: inline-block;}
+nav a {
+color: rgb(206, 169, 144);
+padding: 8px 12px;
+font-size: 50px;
+text-decoration: none;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:rgb(229, 200, 160);
-    text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+background-color:bisque;
+text-align: center;
 }
 
-h1{
-    margin-top: 30px;
-}
-.reviews{
-    display:flex;
-    overflow-x:auto;
-    gap:20px;
 
-    padding:20px;
-    width:90%;
-    margin:auto;
-
-    scroll-behavior: smooth;
-}
-.reviews::-webkit-scrollbar{
-    display:none;}
-
-    .cards{
-        min-width: 280px;
-        background: rgb(99, 161, 204);
-        border-radius: 20px;
-        padding:20px;
-        box-shadow: 0 0 10px rgba (0,0,0,0.2);
-        flex-shrink: 0;
-    }
-
-    .cards h2{
-        color:gold
-    }
-
-     nav ul
-                        {list-style-type: none;
-                         background-color: #000000;
-                        padding: 0px;
-                      margin: 0;}
-
-                        nav li
-                        {display: inline-block;}
-                        nav a {
-                          color: rgb(206, 169, 144);
-                          padding: 8px 12px;
-                          font-size: 50px;
-                          text-decoration: none;
-                        }
-
-
-.comment-box {
-  max-width: 450px;
-  margin: 15px auto 0 auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  text-align: left;
+/* Outer of cards */
+.reviews {
+overflow: hidden;
+width: 100%;
+padding: 20px ;
+background-color: #70c3c9; 
 }
 
-.animated-box{
- 
-}
-/* Labels and Inputs */
-.comment-box .field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+/* Flex track that moves infinitely */
+.track {
+display: flex;
+gap: 20px;
+width: max-content;
+animation: scroll 20s linear infinite;
 }
 
-.comment-box label {
-  font-size: 0.9rem;
-  font-weight: bold;
+/* PAUSE WHEN HOVER */
+.reviews:hover .track {
+animation-play-state: paused;
 }
 
-.comment-box input,
-.comment-box textarea {
-  padding: 8px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1 rem;
-  font-family: inherit;
+/* Card Styling */
+.cards {
+background-color: #a5d4fa;
+border-radius: 8px;
+padding: 15px;
+width: 280px;
 }
+
+
+/* Keyframe for sliding left */
+@keyframes scroll {
+0% {
+  transform: translateX(0);
+}
+100% {
+  /* Moves half the width so duplicate set takes over seamlessly */
+  transform: translateX(-50%);
+}
+}
+
+ /*Fixed size comment textarea*/
+ .comment-box textarea{
+ height: 200px;
+ width: 500px;
+ resize: none;
+ }
+
+
 
 /* Submit Button */
 .comment-box .submit-btn {
-  background-color: #317db3;
-  color: white;
+  background-color: white;
+  color:black;
   border: none;
   padding: 10px;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
 }
+
