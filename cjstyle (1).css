@@ -20,6 +20,16 @@ font-family: Arial, Helvetica, sans-serif;
 background-color:bisque;
 text-align: center;
 }
+  .site-header{
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffffff; }
+      
+      .site-logo{
+        height: 40px;
+        width: auto;
+        display: block;}
 
 
 /* Outer of cards */
