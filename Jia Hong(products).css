@@ -9,7 +9,6 @@ font-size: 20px;}
       p{color: #31302b ;
      text-align: center;
       font-size: 30px;}
-      html, body{max-width: 100%; overflow-x: hidden;}
       
     font{
      background-color: #f2f2f2;
@@ -22,11 +21,16 @@ font-size: 20px;}
      height: auto; 
      display: block;}
      .column{ width: 50%;}
+
      *{box-sizing: border-box;}
-     @media (max-width: 600px) 
-     {nav a { display: block; }
-.card { width: 100%; }
-h1 { font-size: 18pt; }}
+
+     nav a { display: block; }
+.card-container{ grid-template-columns: repeat(2,1fr); }
+h1 { font-size: 18pt; }
+@media (max-width: 380px){
+.card-container{ grid-template-columns: 1fr; }}
+
+
 
      .site-header{
       display: flex;
@@ -37,13 +41,12 @@ h1 { font-size: 18pt; }}
       .site-logo{
         height: 40px;
         width: auto;
-        display: block;
-      }
-                         
+        display: block;}
+     
            nav ul
          {list-style-type: none;
          background-color: black;
-         padding: 0px;
+            padding: 0px;
            margin: 0px;}
 
            nav li
@@ -52,7 +55,7 @@ h1 { font-size: 18pt; }}
            .nav a {
            color: rgb(255, 255, 255);
            padding: 8px 12px;
-           font-size: 20px;
+           font-size: 10px;
            text-decoration: none; }
                             
              nav a:hover
@@ -70,7 +73,9 @@ h1 { font-size: 18pt; }}
                ul li a
                {padding: 10px 15px;
                display: inline-block;
-              color: burlywood;}
+              color: burlywood;
+            max-width: 100%;
+          box-sizing: border-box;}
 
             .navbar{display: flex; 
             align-items: center;
@@ -83,6 +88,7 @@ h1 { font-size: 18pt; }}
                 left: 0;
               width: 100%;
               height: 60px;}
+
               .main-content{ padding-top: 60px;}
 
               .nav-container ul{
@@ -102,9 +108,8 @@ h1 { font-size: 18pt; }}
                 background-color: #3498db;}
 
 
-                /* hover effect to make it more interactive*/
                 .logo{ 
-                 height:200px; 
+                 height:150px; 
                  width: auto}
                                                         .card:hover
                                                          {box-shadow: 6px 6px 14px #af4d4d;
@@ -125,7 +130,6 @@ h1 { font-size: 18pt; }}
                                                        flex:1;
                                                       padding: 12px;
                                                        font-size: 30px;}
-
 
 
           
