@@ -128,3 +128,13 @@ display: block;}
         transform: translateX(-50%);
     }
 }
+
+@media (max-width: 768px) {
+    nav.top-nav {
+        justify-content: center; /* Centers the navbar items on tablet/mobile screens */
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
