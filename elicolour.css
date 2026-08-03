@@ -48,7 +48,7 @@ nav.top-nav {
     justify-content: space-between;
     gap: 15px;
     background-color: #2d190d;
-    padding: 15px;
+    padding: 6px 20px; /* Reduced vertical padding to make height smaller */
     flex-wrap: wrap;
 }
 
@@ -56,28 +56,29 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 15px;
     margin: 0;
     padding: 0;
-}
-
-nav li {
-    display: inline-block;
+    flex: 1;               /* Allows navigation links to stretch across space */
+    justify-content: center; /* Centralizes menu items */
 }
 
 nav a {
     color: rgb(206, 169, 144);
-    padding: 6px 10px;
+    padding: 6px 12px;
     text-decoration: none;
     display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 nav a:hover {
     background: #5a5246;
+    border-radius: 4px;
 }
 
 .nav-logo {
-    height: 90px;
+    height: 65px; /* Enlarged logo to fill the navbar height */
     width: auto;
     display: block;
 }

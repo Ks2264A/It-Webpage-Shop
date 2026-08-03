@@ -1,67 +1,129 @@
-body{font-family: Arial, sans-serif; max-width: 1600px; margin: 30px auto;}
-            label{display:inline-block; margin-top:12px;font-weight:bold;}
-             input,select,textarea{margin-top:4px;}
-body{background-color:bisque;}
-h1{color:#2d190d; margin-left:20px;}
-p{color:black; margin-left:20px; margin-right:20px;}
-nav ul {
-list-style-type: none;
-background-color: #2d190d;
-padding: 10px;
-}
-nav li { display: inline-block; }
-nav a {
-color: rgb(206, 169, 144);
-padding: 8px 16px;
-text-decoration: none;
-}
+/*Author: Elias Tan, Ling Kai Sheng
+Admin no. 261368P, 261500Q8*/
+
+/* --- Global Body Setup --- */
 body {
-  margin: 0;
-  background-color: bisque; /* The background color you fade into */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    color: #2d190d;
 }
+
+/* --- Navigation Bar --- */
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #2d190d;
+    padding: 12px 30px;
+}
+
+/* Square logo with no circle rounding */
+.nav-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* Centered navigation items */
+.top-nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a {
+    color: rgb(206, 169, 144);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+    color: #ffffff;
+}
+
+/* --- Page Content Layout --- */
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2d190d;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
 p {
-  font-size: 30px;
+    color: #2d190d;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
 }
-.logo{ 
-height:200px; 
-width: auto;  }
-/* 1. The visible window frame */
-        .scroll-container {
-            overflow: hidden;
-            width: 100%;
-            background-color: bisque;
-            padding: 20px 0;
-            display: flex;
-        }
 
-        /* 2. The long track moving left */
-        .scroll-track {
-            display: flex;
-            width: max-content;
-            animation: scrollLoop 5s linear infinite;
-        }
+p.subtitle {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
 
-        /* Pause scrolling when user hovers over an image */
-        .scroll-container:hover .scroll-track {
-            animation-play-state: paused;
-        }
+/* --- Scroll Carousel Section --- */
+.scroll-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+}
 
-        /* 3. Styling the individual images */
-        .scroll-track img {
-            width: 250px;
-            height: 300px;
-            object-fit: cover;
-            margin: 0 10px;
-            border-radius: 8px;
-        }
+.scroll-track {
+    display: flex;
+    width: max-content;
+    animation: scrollLoop 12s linear infinite;
+}
 
-        /* 4. The animation math logic */
-        @keyframes scrollLoop {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                /* Moves exactly half the width of the double-set track */
-                transform: translateX(-50%);
-            }
-        }
+.scroll-container:hover .scroll-track {
+    animation-play-state: paused;
+}
+
+.scroll-track img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.site-header{
+display: flex;
+align-items: center;
+padding: 10px 20px;
+background-color: #ffffff}
+
+.site-logo{
+height: 40px;
+width: auto;
+display: block;}
+
+/* --- Keyframe Animations --- */
+@keyframes scrollLoop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
