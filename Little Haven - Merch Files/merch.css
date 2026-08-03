@@ -17,7 +17,7 @@ body {
     justify-content: center;
     position: relative;
     background-color: #2d190d;
-    padding: 12px 30px;
+    padding: 8px 16px;
 }
 
 /* Square logo with no circle rounding */
@@ -48,6 +48,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    font-size: 30px;
 }
 
 .top-nav a:hover,

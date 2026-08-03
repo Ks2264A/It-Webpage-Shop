@@ -75,8 +75,8 @@ p {
   display: flex;
   flex-wrap: wrap;              /* Pushes extra cards to the next row automatically */
   justify-content: space-between; /* Places one card on the far left, one on the far right */
-  row-gap: 30px;   
-  margin-right: 10px;             /* Adds clean vertical spacing between rows */
+  row-gap: 30px;   /* Adds clean vertical spacing between rows */
+  margin-right: 10px;             
 }
 
 .product-card {
