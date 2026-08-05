@@ -182,3 +182,22 @@ nav a:hover {
         font-size: 1.1rem;
     }
 }
+
+table {
+    font-size: 20px;
+}
+
+table {
+    width: 95%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th {
+    width: 20%;
+    text-align: left;
+}
+
+td {
+    width: 80%;
+}
