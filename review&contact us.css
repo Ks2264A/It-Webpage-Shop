@@ -1,0 +1,96 @@
+/* Author:Chen Jie (261531E) */
+
+
+nav ul {
+list-style-type: none;
+background-color: #000000;
+padding: 0px;
+margin: 0;}
+nav li{
+display: inline-block;}
+nav a {
+color: rgb(206, 169, 144);
+padding: 8px 12px;
+font-size: 50px;
+text-decoration: none;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color:bisque;
+text-align: center;
+}
+
+.site-header{
+display: flex;
+align-items: center;
+padding: 10px 20px;
+background-color: #ffffff; }
+
+.site-logo{
+height: 40px;
+width: auto;
+display: block;}
+
+
+/* Outer of cards */
+.reviews {
+overflow: hidden;
+width: 100%;
+padding: 20px ;
+background-color: #70c3c9; 
+}
+
+/* Flex track that moves infinitely */
+.track {
+display: flex;
+gap: 20px;
+width: max-content;
+animation: scroll 20s linear infinite;
+}
+
+/* PAUSE WHEN HOVER */
+.reviews:hover .track {
+animation-play-state: paused;
+}
+
+/* Card Styling */
+.cards {
+background-color: #a5d4fa;
+border-radius: 8px;
+padding: 15px;
+width: 280px;
+}
+
+
+/* Keyframe for sliding left */
+@keyframes scroll {
+0% {
+  transform: translateX(0);
+}
+100% {
+  /* Moves half the width so duplicate set takes over seamlessly */
+  transform: translateX(-50%);
+}
+}
+
+ /*Fixed size comment textarea*/
+ .comment-box textarea{
+ height: 200px;
+ width: 500px;
+ resize: none;
+ }
+
+
+
+/* Submit Button */
+.comment-box .submit-btn {
+  background-color: white;
+  color:black;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
